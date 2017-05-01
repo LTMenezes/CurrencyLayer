@@ -1,0 +1,42 @@
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js">
+	<head>
+	  <meta charset="UTF-8">
+	  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <script src="https://code.highcharts.com/stock/highstock.js"></script>
+	  <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+	  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+		  <h2>Currency Layer Frontend</h2>
+		  <p>Minimal frontend to showcase the CurrencyLayerBackend</p>
+		  <p>Switch tabs to see historical conversion rates for some currencies</p>
+		  
+		  <ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#BRL">BRL</a></li>
+			<li><a data-toggle="tab" href="#EUR">EUR</a></li>
+			<li><a data-toggle="tab" href="#ARS">ARS</a></li>
+		  </ul>
+
+		  <div class="tab-content">
+			<div id="BRL" class="tab-pane fade in active">
+			  <h3>BRL</h3>
+			  <div id="usdToBrl" style="width:100%; height:400px;"></div>
+			</div>
+			<div id="EUR" class="tab-pane fade">
+			  <h3>EUR</h3>
+			  <div id="usdToEur" style="width:100%; height:400px;"></div>
+			</div>
+			<div id="ARS" class="tab-pane fade">
+			  <h3>ARS</h3>
+			  <div id="usdToArs" style="width:100%; height:400px;"></div>
+			</div>
+		  </div>
+		</div>
+		<script src="js/currencyLayerCharts.js"></script>
+	</body>
+</html>
