@@ -12,7 +12,7 @@ To build the backend you'll need .Net Framework 4.6.2 and a Currency Layer Api A
 
 Run server and access the frontend through the index.html
 
-![Usage](prints/BRL.PNG)
+![Usage](Prints/BRL.PNG)
 
 ## Authors
 - Leonardo Teixeira Menezes
